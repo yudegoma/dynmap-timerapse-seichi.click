@@ -9,11 +9,6 @@ def pil_to_cv2(pil_img):
 
 # 画像の切り取り
 def crop(img: np.ndarray) -> np.ndarray:
-    h, w = img.shape[:2]
-    h1, h2 = int(h * 0.05), int(h * 0.95)
-    w1, w2 = int(w * 0.05), int(w * 0.95)
-    img = img[h1: h2, w1: w2]
-
     img_mask = np.where(img == 0, 255, 0)
     img_mask = img_mask[:, :, 2]
 
