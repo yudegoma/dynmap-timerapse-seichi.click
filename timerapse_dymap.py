@@ -14,7 +14,8 @@ center = [-128, 0, -128]
 size = [2, 2]
 zoom = 4
 
-if __name__ == '__main__':
+
+def timerapse_dynmap():
     dm = dynmap.DynMap(base_url)
     maps = dm.worlds[world].maps
     dm_map = maps[map_name]
@@ -32,3 +33,6 @@ if __name__ == '__main__':
     cv2.imwrite(dest, crop(pil_to_cv2(img)))
 
     make_gif(img_dir)
+
+if __name__ == '__main__':
+    timerapse_dynmap()
