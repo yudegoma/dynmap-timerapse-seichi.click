@@ -32,7 +32,7 @@ def waiting(func):
 
 def tweet_mp4():
     now = datetime.datetime.now()
-    movie = mp4_dir + "/movie.mp4"  # 画像を投稿するなら画像のパス
+    movie = mp4_dir + "/movie.mp4" 
 
     if datetime.date.today().weekday() == 4:
         make_mp4(img_dir+"/*", movie)
