@@ -57,8 +57,6 @@ if __name__ == '__main__':
     schedule.every(10).minutes.do(timelapse_dynmap)
     schedule.every().day.at("0:00").do(tweet_mp4)
 
-    tweet_mp4()
-
     while True:
         schedule.run_pending()
         time.sleep(60)
