@@ -3,11 +3,14 @@ from glob import glob
 import cv2
 import imageio
 
+import os
+os.environ["IMAGEIO_FFMPEG_EXE"] = "/usr/bin/ffmpeg"
 
-def make_mp4(img_dir, out_file):
+def make_mp4(img_dir, out_file, fps):
     # encoder(for mp4)
+
     files = sorted(glob(img_dir + "/*.png", recursive=True))
-    writer = imageio.get_writer(out_file, fps=5)    # opencvだとフォーマットがよくないので素直にffmpeg使いましょう
+    writer = imageio.get_writer(out_file, fps=fps)
 
     for f in files:
         # hoge0000.png, hoge0001.png,..., hoge0090.png

@@ -48,4 +48,3 @@ def crop(img: np.ndarray) -> np.ndarray:
     crop_img = img[y1+1:y2, x1+1:x2]
 
     return crop_img
-
