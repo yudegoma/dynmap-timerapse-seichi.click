@@ -8,7 +8,7 @@ imageio-ffmpeg==0.4.2
 numpy==1.18.5
 oauthlib==3.1.0
 opencv-python==4.2.0.34
-Pillow==7.1.2
+Pillow==8.3.2
 PySocks==1.7.1
 python-twitter==3.5
 requests==2.23.0
