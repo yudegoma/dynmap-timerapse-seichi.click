@@ -5,7 +5,7 @@ future==0.18.2
 idna==2.9
 imageio==2.8.0
 imageio-ffmpeg==0.4.2
-numpy==1.18.5
+numpy==1.22.0
 oauthlib==3.1.0
 opencv-python==4.2.0.34
 Pillow==7.1.2
